@@ -9,6 +9,7 @@ Your code will split to some steps.
 
 `init` -> `input` -> `map` -> `reduce` -> `output`
 
+    ...
     Taurus\Taurus::instance(__DIR__ . '/') // init. set directory of tmp files
         ->input('1 22 333 4444 55555 666666 7777777 88888888 999999999 aaaaaaaaaa') // input
         ->map(function($resource) { // map
@@ -43,3 +44,4 @@ Your code will split to some steps.
 
             return $ret;
         });
+    ...
